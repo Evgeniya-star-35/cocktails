@@ -61,4 +61,4 @@ module.exports=require("./lib/axios");
 },{"./lib/axios":"nUiQ"}],"Focm":[function(require,module,exports) {
 "use strict";var t=e(require("./js/refs"));function e(t){return t&&t.__esModule?t:{default:t}}const s=require("axios");let r="";function l(e){e.preventDefault(),r=t.default.input.value,s.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${r}`).then(e=>{n(e.data.drinks),t.default.form.reset()}).catch(t=>console.log(t))}function a({strDrink:e,strDrinkThumb:s,strInstructions:r}){const l=`<li class='gallery-item'><img class='gallery-img' src='${s}' alt='${e}'/><h1 class ="gallery-title">${e}</h1><p class ="gallery-text">${r}</p></li>`;t.default.gallery.insertAdjacentHTML("beforeend",l)}function n(t){t.forEach(t=>a(t))}t.default.form.addEventListener("submit",l);
 },{"./js/refs":"VyiV","axios":"dZBD"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.8378e3dd.js.map
+//# sourceMappingURL=/cocktails/src.8378e3dd.js.map
