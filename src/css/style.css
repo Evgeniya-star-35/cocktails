@@ -96,9 +96,14 @@ img {
   border-radius: 50px;
   border: 2px solid springgreen;
 }
-.gallery-text {
+.gallery-title {
   text-align: center;
   color: rgb(226, 13, 77);
   font-size: 20px;
   font-weight: bold;
+}
+.gallery-text {
+  font-size: 20px;
+  letter-spacing: normal;
+  color: rgb(37, 15, 231);
 }

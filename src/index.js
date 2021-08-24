@@ -17,8 +17,8 @@ function onSearchCocktail(e) {
 }
 refs.form.addEventListener('submit', onSearchCocktail);
 
-function markUpItem({ strDrink, strDrinkThumb }) {
-  const article = `<li class='gallery-item'><img class='gallery-img' src='${strDrinkThumb}' alt='${strDrink}'/><p class ="gallery-text">${strDrink}</p></li>`;
+function markUpItem({ strDrink, strDrinkThumb, strInstructions }) {
+  const article = `<li class='gallery-item'><img class='gallery-img' src='${strDrinkThumb}' alt='${strDrink}'/><h1 class ="gallery-title">${strDrink}</h1><p class ="gallery-text">${strInstructions}</p></li>`;
   refs.gallery.insertAdjacentHTML('beforeend', article);
 }
 
